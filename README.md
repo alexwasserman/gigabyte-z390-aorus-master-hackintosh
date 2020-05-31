@@ -1,10 +1,10 @@
 # Hackintosh Catalina (10.5.5) Guide for Gigabyte Z390 Aorus Master (OpenCore) with FileVault
 
-This build is "Vanilla". I used [this guide](https://dortania.github.io/OpenCore-Desktop-Guide/) as a starting point, with references and checking to [CMER's awesome guide](https://github.com/cmer/gigabyte-z390-aorus-master-hackintosh/blob/master/README.md).
+This build is "Vanilla". I used [this guide](https://dortania.github.io/OpenCore-Desktop-Guide/) as a starting point, with references and checking to [cmer's awesome guide](https://github.com/cmer/gigabyte-z390-aorus-master-hackintosh/blob/master/README.md).
 
 The biggest difference is that I have FileVault and the GUI OS picker enabled, and I've updated the kexts, SSDTs, etc to the latest for 0.5.8 and 10.15.5
 
-Yes - this is totally ripped from CMER - all credit to him.
+Yes - this is totally ripped from [cmer](https://github.com/cmer) - all credit to him.
 
 ### Hardware
 
@@ -62,3 +62,22 @@ You are welcome to use my EFI folder. However, make sure you set the following:
 - SystemSerialNumber
 - SystemUUID
 - MLB
+
+### Steps
+
+I was using Clover previously, but completely build this OpenCore build from scratch, with no attempt to migrate over.
+
+On my EFI partition I have:
+
+- OpenCore
+  - 0.5.8.ORIG - this is my initial working build of OpenCore (debug, with extra logging, and no GUI)
+  - 0.5.8.WORKING - this is a copy I make of my booted EFI whenever I make changes for easy roll-back
+- Clover
+  - EFI - this is my final working Clover EFI
+- EFI - this is the EFI I boot from
+
+I also keep the above copied onto the EFI partition of a USB drive, as a failback.
+
+With the GUI enabled, copying the booted (ie known working) EFI to the .WORKING version doesn't have enough space due to the large resources folder, so I leave that empty on the backup. It doesn't change often.
+
+![EFI Volume](images/EFI_Volume.png)

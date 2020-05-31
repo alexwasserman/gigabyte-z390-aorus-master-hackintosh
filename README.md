@@ -23,9 +23,12 @@ See my [Hardware List](https://pcpartpicker.com/list/4LYjk6) on PCPartsPicker.
 - iMessage
 - App Store
 - Facetime
+  - I use a Logitech C920 webcam
 - APFS
 - Handoff
-- Bluetooth & Wi-Fi (via Broadcom adapter - I ordered this from eBay: Dual Band BCM94360CS2 PCI-E 867Mbps 802.11AC BT4.0 Wifi PCI-Express Adapter Card)
+- Bluetooth & Wi-Fi - via Broadcom adapter
+  - I ordered this from eBay: Dual Band BCM94360CS2 PCI-E 867Mbps 802.11AC BT4.0 Wifi PCI-Express Adapter Card
+  - Most important is to search for a supported card - the [Wireless Buyers Guide](https://dortania.github.io/Wireless-Buyers-Guide/unsupported.html) has the info you need
 - Unlock with Apple Watch
 - Airdrop
 - AirPlay
